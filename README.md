@@ -33,3 +33,5 @@ python evaluate.py
 ```
 Output: Error analysis metrics printed.
 
+The checkpoint files along with the logs for TinyBERT model can be found at: https://drive.google.com/drive/folders/1JTwYV8RHFc_iErRBhTgkC05gNLLeobTn?usp=sharing
+
