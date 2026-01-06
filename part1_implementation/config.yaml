@@ -1,0 +1,28 @@
+model:
+  name: "huawei-noah/TinyBERT_General_4L_312D"
+  learning_rate: 2e-4
+  max_len: 256
+  freeze_encoder: true
+
+data:
+  train_split: 0.8
+  val_split: 0.2
+  batch_size: 16
+  num_workers: 2
+
+training:
+  max_epochs: 20
+  patience: 3
+  weight_decay: 1e-5
+  gradient_clip_val: 1.0
+  mode: "min"
+  accelerator: "auto"
+  devices: 1
+  save_last: true
+  log_every_n_steps: 10
+  enable_progress_bar: true
+
+paths:
+  models_dir: "TinyBERT"
+  logger_dir: "TinyBERT/logs"
+  checkpoint_monitor: "val_loss"
