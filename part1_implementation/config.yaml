@@ -1,5 +1,5 @@
 model:
-  name: "huawei-noah/TinyBERT_General_4L_312D"
+  name: "prajjwal1/bert-tiny"
   learning_rate: 2e-4
   max_len: 256
   freeze_encoder: true
@@ -23,6 +23,6 @@ training:
   enable_progress_bar: true
 
 paths:
-  models_dir: "TinyBERT"
-  logger_dir: "TinyBERT/logs"
+  models_dir: "bert-tiny"
+  logger_dir: "bert-tiny/logs"
   checkpoint_monitor: "val_loss"
